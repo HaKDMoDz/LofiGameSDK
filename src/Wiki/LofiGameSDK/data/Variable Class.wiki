@@ -1,0 +1,8 @@
+﻿++ Variable Class
+
+
+Variable 变量是对基本数据量的一个封装
+Variable是可编辑的，需要做序列化支持
+Accessor已经同Variable没有任何关系了，Variable作为数据量由顶级管理系VariableManager直接管理
+这一点十分重要，关系到Variable定义和职责划定
+Variable并不担负String和其内部真实类型转换的任务，字串转换由编辑器来完成

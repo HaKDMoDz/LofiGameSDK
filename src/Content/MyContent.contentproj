@@ -1,0 +1,26 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+		<OutputType>Library</OutputType>
+		<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+		<XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+		<ContentRootDirectory>EditorContent</ContentRootDirectory>
+		<XNAContentPipelineTargetPlatform>Windows</XNAContentPipelineTargetPlatform>
+		<XNAContentPipelineTargetProfile>Reach</XNAContentPipelineTargetProfile>
+		<OutputPath>HeiHei</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Texture\Grid\SystemH.png">
+			<Name>SystemH</Name>
+			<Importer>TextureImporter</Importer>
+			<Processor>TextureProcessor</Processor>
+		</Compile>
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+</Project>

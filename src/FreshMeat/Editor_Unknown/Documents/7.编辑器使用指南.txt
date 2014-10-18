@@ -1,0 +1,7 @@
+﻿1. Lofi游戏项目需要的基本程序集是LofiEngine。同样也可以引用XNA和Physics来支持基本数据，或者使用底层的高级功能。
+2. LofiXUI是一个UI库，提供了一些基本控件，方便给新的游戏项目快速创建UI
+3. 允许自定义的管理器将提供一个IManager接口，其中规定了必须存在的属性和必须实现的方法 （不提供IManager接口的管理器都不允许自定义）
+	目前支持扩展的管理器:GameManager
+4. GameManager是供游戏本身使用的，不能包含编辑器量；IGameManager可以被编辑器扩展为EditorManager，实现类似GameManager的功能
+5. 其实有些游戏主编辑器控件是可以使用SceneManager的，如Mario
+6. 在场景中绘制AnimTexture的AABB是没有意义的

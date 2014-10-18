@@ -1,0 +1,6 @@
+﻿++ Trigger Property Descriptor Class
+
+触发器属性描述
+用于PropertyGrid 这种Trigger自动和元数据的event相关联
+Trigger的管理类也是一个组件，具有触发器组件的容器可以让触发器组件将其组件的事件同一个触发器相关联
+这种Trigger包括event部分，但是同顶级Trigger管理器中的Trigger有所不同，event的提供者不是顶级访问器，而是当前容器

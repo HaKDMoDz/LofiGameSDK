@@ -1,0 +1,3 @@
+++ Operate Pattern 类
+
+创建模式类

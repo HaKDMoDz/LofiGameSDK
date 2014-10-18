@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59BBCDAA-765F-4829-9F53-41A8F162EF89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lofinil.GameSDK.Editor.Interception</RootNamespace>
+    <AssemblyName>Lofinil.GameSDK.Editor.Interception</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IWizardView.cs" />
+    <Compile Include="ModuleInterface\IOperatePatternModule.cs" />
+    <Compile Include="ModuleInterface\IProjectModule.cs" />
+    <Compile Include="ModuleInterface\IResourceSetModule.cs" />
+    <Compile Include="ModuleInterface\IStageModule.cs" />
+    <Compile Include="ModuleInterface\ITextureSetModule.cs" />
+    <Compile Include="ModuleInterface\IWizardModule.cs" />
+    <Compile Include="Project\Type\Processor.cs" />
+    <Compile Include="Project\Type\ProjectData.cs" />
+    <Compile Include="ResourceSet\Type\ResourceSetData.cs" />
+    <Compile Include="EditorStatics.cs" />
+    <Compile Include="ToolBox\Type\Tool.cs" />
+    <Compile Include="ToolBox\Type\ToolSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wizard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Project\Command\" />
+    <Folder Include="Project\Event\" />
+    <Folder Include="ResourceSet\Command\" />
+    <Folder Include="ResourceSet\Event\" />
+    <Folder Include="ToolBox\Command\" />
+    <Folder Include="ToolBox\Event\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lofinil.Architecture\Lofinil.Architecture.csproj">
+      <Project>{19E2AB0E-F534-4FA9-9F6C-38B39ABDDB39}</Project>
+      <Name>Lofinil.Architecture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor\Lofinil.GameSDK.Editor.Architecture.csproj">
+      <Project>{EB25DD64-E98C-4C49-B47E-312C3A48E731}</Project>
+      <Name>Lofinil.GameSDK.Editor.Architecture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Engine\Lofinil.GameSDK.Engine.csproj">
+      <Project>{1F0BBD06-A1F5-4B4C-9042-CA77EACD29B5}</Project>
+      <Name>Lofinil.GameSDK.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

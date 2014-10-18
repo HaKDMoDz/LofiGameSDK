@@ -1,0 +1,5 @@
+﻿++ Lofinil Game SDK Library
+
+*Libraries*
+[//Engine Library]
+[//编辑器库]

@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LofiEngine.EditorProj
+{
+    // 访问器返回类别
+    public enum FunctionCatalog
+    {
+        Accessor,
+        Action,
+        Checker,
+    }
+
+    public class FunctionInfo
+    {
+    }
+
+    // 顶级访问函数和行为函数的组织类
+    public class PubFunction
+    {
+        public List<FunctionInfo> FuncInfoList;
+
+        public PubFunction()
+        {
+            FuncInfoList = new List<FunctionInfo>();
+        }
+
+        // 注册函数
+        public void RegisterFunction(String name, String className, FunctionCatalog catalog, String desc, String[] paramClass, String[] paramDesc, String returnClass)
+        {
+            // UNDONE 这里要加上重名检测，因为该函数只在开发阶段执行，所以不用担心效率冗余，发布后是通过文件反序列化得到这些信息的
+            FuncInfoList.Add(new FunctionInfo(name, className, catalog, desc, paramClass, paramDesc, returnClass));
+        }
+
+        // 取类函数
+        public List<FunctionInfo> GetFunctionInfoList(String className, FunctionCatalog catalog)
+        {
+            return FuncInfoList.FindAll(info => (info.Class == className) && (info.Catalog == catalog));
+        }
+
+        // 取函数
+        public FunctionInfo GetFunctionInfo(String name, String className, FunctionCatalog catalog)
+        {
+            return FuncInfoList.Find(info => (info.Name == name) && (info.Class == className) && (info.Catalog == catalog));
+        }
+    }
+}

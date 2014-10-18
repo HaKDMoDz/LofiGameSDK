@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LofiEngine.EditorProj
+{
+    public class PubTemp
+    {
+        PubFunction PubFunc;
+
+        PubProperty PubProp;
+
+        public void RegistAll()
+        {
+            //=================================================================================================================================
+            // GameObject
+            // 虽然有更好的方式，这两个可以留下作为一种可选方式或者临时用用
+            PubFunc.RegisterFunction("GetPropertyByName", "GameObject", FunctionCatalog.Accessor, "Get GameObject Property by Name", new String[]{"String"}, new String[]{"属性名称"}, "Object");
+            PubFunc.RegisterFunction("SetPropertyByName", "GameObject", FunctionCatalog.Action, "Set GameObject Property by Name", new String[]{"String", "Object"}, new String[]{"属性名称", "新的属性值"}, "void");
+
+            //=================================================================================================================================
+            // Top-Level 和 GameManager是等价的 这里注册的顶级访问方式也就是GameManager能够直接访问到的，为了编辑器方便直接访问到间接层，写一个顶层函数或属性也是值得的
+            // NOTE 下面是两条例子
+            PubProp.RegisterPropertyInfo("Width", "GameManager", "Basic", "游戏窗口宽度", "int");
+            PubFunc.RegisterFunction("PlayMusic", "GameManager", FunctionCatalog.Action, "播放指定的音乐", new String[]{"String"}, new String[]{"路径"}, "void");
+            
+        }
+    }
+}

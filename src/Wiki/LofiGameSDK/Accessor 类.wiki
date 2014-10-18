@@ -1,0 +1,4 @@
+++ Accessor 类
+
+之前Accessor内容数据都是Variable，这是为了记录类型，便于Checker在类型已知的情况下执行检查
+实际上获取类型并不是反射，无需担心效率，因此去除Variable。让Variable专心做自己的命名变量吧。

@@ -1,0 +1,13 @@
+﻿++ Editor
+
+*类*
+    * [//OperatePatternManager 类]
+    * [//OperatePattern 类]
+
+    * [//Wizard 类]
+    * [//WizardPage 类]
+    * [//WizardManager 类]
+    * [//IWizardView 接口]
+    * [//WizardPresenter 类]
+
+*枚举*

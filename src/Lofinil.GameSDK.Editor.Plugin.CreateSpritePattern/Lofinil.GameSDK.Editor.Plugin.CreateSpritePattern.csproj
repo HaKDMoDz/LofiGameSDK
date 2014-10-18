@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BD3941C-51A5-4776-8BAB-48499E38C621}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lofinil.GameSDK.Editor.Plugin.CreateSpritePattern</RootNamespace>
+    <AssemblyName>Lofinil.GameSDK.Editor.Plugin.CreateSpritePattern</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\Plugin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\Plugin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lofinil.GameSDK.Editor.Module.FormComponent">
+      <HintPath>..\Lofinil.GameSDK.Editor.Module.FormComponent\obj\Debug\Lofinil.GameSDK.Editor.Module.FormComponent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pattern_CreateSpritePattern\CreateSpritePattern.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lofinil.Architecture\Lofinil.Architecture.csproj">
+      <Project>{19E2AB0E-F534-4FA9-9F6C-38B39ABDDB39}</Project>
+      <Name>Lofinil.Architecture</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Interception\Lofinil.GameSDK.Editor.Interception.csproj">
+      <Project>{59BBCDAA-765F-4829-9F53-41A8F162EF89}</Project>
+      <Name>Lofinil.GameSDK.Editor.Interception</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.FormResource\Lofinil.GameSDK.Editor.Module.FormResource.csproj">
+      <Project>{413DB9E9-547A-4904-B3E5-2057B3F3DC65}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.FormResource</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.FormStage\Lofinil.GameSDK.Editor.Module.FormStage.csproj">
+      <Project>{823A2833-7EE1-41FB-8385-C6F078EEC80E}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.FormStage</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.FormView\Lofinil.GameSDK.Editor.Module.FormView.csproj">
+      <Project>{D5CC6A29-0C9D-4DAC-A4A9-E64E97C6F606}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.FormView</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.OperatePattern\Lofinil.GameSDK.Editor.Module.OperatePattern.csproj">
+      <Project>{FA162A67-6140-4489-806A-FB75053EE6C5}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.OperatePattern</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.Project\Lofinil.GameSDK.Editor.Module.Project.csproj">
+      <Project>{D3E34226-A255-4954-A5D3-BED2370C4535}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.Project</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.ResourceSet\Lofinil.GameSDK.Editor.Module.ResourceSet.csproj">
+      <Project>{6BB3AC16-F381-436F-8F2E-DE82201CF8FA}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.ResourceSet</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.Stage\Lofinil.GameSDK.Editor.Module.Stage.csproj">
+      <Project>{4D994C1C-94C0-4BAF-827D-E0902FFE8848}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.Stage</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.ToolBox\Lofinil.GameSDK.Editor.Module.ToolBox.csproj">
+      <Project>{8A783945-F28B-45B0-89AC-CD2BB9DFD029}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.ToolBox</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.View\Lofinil.GameSDK.Editor.Module.View.csproj">
+      <Project>{3729816B-F441-414E-B305-CBEE446857E8}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.View</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.WizardModule.Winform\Lofinil.GameSDK.Editor.Module.Wizard.csproj">
+      <Project>{1BF1186A-6CB4-4100-AD06-A8FA1462CF86}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.Wizard</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor\Lofinil.GameSDK.Editor.Architecture.csproj">
+      <Project>{EB25DD64-E98C-4C49-B47E-312C3A48E731}</Project>
+      <Name>Lofinil.GameSDK.Editor.Architecture</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Engine\Lofinil.GameSDK.Engine.csproj">
+      <Project>{1F0BBD06-A1F5-4B4C-9042-CA77EACD29B5}</Project>
+      <Name>Lofinil.GameSDK.Engine</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.WinControl\Lofinil.GameSDK.WinControl.csproj">
+      <Project>{05DC9D27-01C3-4F7A-AD54-5A2DADE35E1F}</Project>
+      <Name>Lofinil.GameSDK.WinControl</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

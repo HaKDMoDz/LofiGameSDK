@@ -1,0 +1,6 @@
+游戏区域大小：600 x 450
+
+Background.bmp  ---- 阿猫阿狗 图块
+DefendChar.png  ---- Open Icon Lab Animals animal-owl.png
+Brick.png 		---- Open Icon Lab Other : rectangle_red.png
+Ball.png		---- Open Icon Lab Other : button-green.png

@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LofiEngine.EditorProj
+{
+    public class EventInfo : Attribute
+    {
+    }
+
+    // 开放事件管理器
+    public class PubEvent
+    {
+        public List<EventInfo> EventInfoList;
+
+        public PubEvent()
+        {
+            EventInfoList = new List<EventInfo>();
+        }
+
+        // 添加一个事件
+        public void RegisterEventInfo(String name, String className, String argClass, String description)
+        {
+            EventInfoList.Add(new EventInfo(name, className, argClass, description));
+        }
+
+        // 取类的所有开放事件
+        public List<EventInfo> GetPropertyInfoList(String className) 
+        {
+            return EventInfoList.FindAll(info => info.Class == className);
+        }
+    }
+}

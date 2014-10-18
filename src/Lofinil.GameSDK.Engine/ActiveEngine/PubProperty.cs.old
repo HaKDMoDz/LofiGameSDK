@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LofiEngine.EditorProj
+{
+    // 游戏对象的公开属性信息
+    // 这个部分是用以支持游戏编辑，和游戏本身无关
+
+    // 这里不使用Attribute来配置是因为PropertyAttribute的信息域不够容纳新的自定信息
+    // 另外，不知道Attribute能否派生且要考虑不太依赖平台的设计
+    // 这造成了除了使用PropertyAttribute标志属性之外，需要手工得再次标注一次
+    // 好在手工公开属性可以按需要有选择公开，只公开重要的需明确表示的属性
+    // 实际上所有的属性及时未公开也可以通过ActionFunc中类似SetProperty和GetProperty来进行操作
+
+    // TODO Attribute能够派生吗？
+    public class PropertyInfo
+    {
+        public String Name;        // 名称
+
+        public String Class;       // 来源类
+
+        public String Category;    // 归类
+
+        public String Description; // 描述
+
+        public String ValueClass;  // 类型
+
+        public PropertyInfo(String name, String className, String category, String desc, String valueClass)
+        {
+            Name = name;
+            Class = className;
+            Category = category;
+            Description = desc;
+            ValueClass = valueClass;
+        }
+    }
+
+    // 开放属性管理器
+    public class PubProperty
+    {
+        public List<PropertyInfo> PropertyInfoList;
+
+        public PubProperty()
+        {
+            PropertyInfoList = new List<PropertyInfo>();
+        }
+
+        // 添加一个属性
+        public void RegisterPropertyInfo(String name, String className, String category, String description, String valueClass)
+        {
+            PropertyInfoList.Add(new PropertyInfo(name, className, category, description, valueClass));
+        }
+
+        // 取类的所有开放属性
+        public List<PropertyInfo> GetPropertyInfoList(String className) 
+        {
+            // UNDONE 要么就别用这个lambda，要么就了解并有度使用
+            // 渣MSDN就给这一个lambda例子
+            return PropertyInfoList.FindAll(info => info.Class == className);
+        }
+    }
+}

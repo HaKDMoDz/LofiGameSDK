@@ -1,0 +1,8 @@
+﻿++ 命名
+
++++XXX、XXXInfo、XXXData
+XXX是运行时类
+XXXInfo通常是XXX的子集，也可以包含设计时路径。
+XXXData是XXX不含资源数据的存取类。
+
+运行时类包含CreateData/CreateInfo来产生部分信息类，也具有一个使用信息类构造的构造函数。

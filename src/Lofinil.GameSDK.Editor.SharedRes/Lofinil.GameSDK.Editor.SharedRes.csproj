@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1AA1526-DA15-47D7-99F5-3D13528669EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lofinil.GameSDK.Editor.SharedRes</RootNamespace>
+    <AssemblyName>Lofinil.GameSDK.Editor.SharedRes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White.png" />
+    <None Include="Resources\16_CompEdit.png" />
+    <None Include="Resources\16_CompGo.png" />
+    <None Include="Resources\16_Compink.png" />
+    <None Include="Resources\16_CompNew.png" />
+    <None Include="Resources\16_Form.png" />
+    <None Include="Resources\16_New.png" />
+    <None Include="Resources\16_Nonvisible.png" />
+    <None Include="Resources\16_Table.png" />
+    <None Include="Resources\16_Trigger.bmp" />
+    <None Include="Resources\16_Visible.png" />
+    <None Include="Resources\16_ZoomIn.png" />
+    <None Include="Resources\16_ZoomOut.png" />
+    <None Include="Resources\22_AlignHC.png" />
+    <None Include="Resources\22_AlignHL.png" />
+    <None Include="Resources\22_AlignHR.png" />
+    <None Include="Resources\22_AlignVB.png" />
+    <None Include="Resources\22_AlignVC.png" />
+    <None Include="Resources\22_AlignVT.png" />
+    <None Include="Resources\22_Anim.png" />
+    <None Include="Resources\22_Block.png" />
+    <None Include="Resources\22_Bottom.png" />
+    <None Include="Resources\22_Color.png" />
+    <None Include="Resources\22_Config.png" />
+    <None Include="Resources\22_Copy.png" />
+    <None Include="Resources\22_Create.png" />
+    <None Include="Resources\22_Delete.png" />
+    <None Include="Resources\22_Down.png" />
+    <None Include="Resources\22_Filter.png" />
+    <None Include="Resources\22_FreeCamera.png" />
+    <None Include="Resources\22_Library.png" />
+    <None Include="Resources\22_Move.png" />
+    <None Include="Resources\22_Movie.png" />
+    <None Include="Resources\22_Picker.png" />
+    <None Include="Resources\22_Resize.png" />
+    <None Include="Resources\22_Rotate.png" />
+    <None Include="Resources\22_Rotate2.png" />
+    <None Include="Resources\22_Save.png" />
+    <None Include="Resources\22_Scale.png" />
+    <None Include="Resources\22_Select.png" />
+    <None Include="Resources\22_Top.png" />
+    <None Include="Resources\22_Up.png" />
+    <None Include="Resources\22_Wizard.png" />
+    <None Include="Resources\16_CompDelete.png" />
+    <Content Include="Resources\LofiEditor.ico" />
+    <None Include="Resources\Origin.png" />
+    <None Include="Resources\SystemH.png" />
+    <None Include="Resources\SystemH5.png" />
+    <None Include="Resources\SystemV.png" />
+    <None Include="Resources\SystemV5.png" />
+    <None Include="Resources\Rounded_TR.png" />
+    <None Include="Resources\Rounded_TL.png" />
+    <None Include="Resources\Rounded_BR.png" />
+    <None Include="Resources\Rounded_BL.png" />
+    <None Include="Resources\ResizeVLine.png" />
+    <None Include="Resources\ResizeHLine.png" />
+    <None Include="Resources\ResizeControl.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

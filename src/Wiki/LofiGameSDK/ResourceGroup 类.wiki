@@ -1,0 +1,3 @@
+++ Resource Group 类
+
+同类型的一组资源

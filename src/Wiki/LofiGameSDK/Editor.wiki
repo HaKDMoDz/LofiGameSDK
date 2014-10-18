@@ -1,0 +1,7 @@
+++ Editor
+
+*类*
+[//OperatePatternManager 类]
+[//OperatePattern 类]
+
+*枚举*

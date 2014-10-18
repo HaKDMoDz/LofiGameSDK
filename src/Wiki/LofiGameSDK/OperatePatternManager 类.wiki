@@ -1,0 +1,15 @@
+++ Operate Pattern Manager 类
+
+KEY 创建模式管理器负责加载创建协定库中的创建模式
+将组件类型与其创建模式相绑定
+执行创建时协调调度各个参与控件
+NOTE 为了实现并测试核心功能，将组建与第一个发现的创建模式绑定。绑定编辑以后完善。
+KEY Create Pattern Provider - 提供创建模式具体类的程序集
+FOCUS [创建模式的解析] 假定所有需要处理的程序集都是Create Pattern Provider
+UNDONE [EditorMVC] Make Private
+
+KEY 一个创建模式通常是一个派生自OperatePattern的类
+
+
+实际上结束的操作是由创建模式内部发起的，例如拖拽创建模式在鼠标弹起时请求创建结束
+EndPattern负责事件反注册等

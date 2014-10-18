@@ -1,0 +1,3 @@
+﻿++ Resource Manager 类
+
+以资源集为单位管理资源

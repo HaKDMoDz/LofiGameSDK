@@ -1,0 +1,19 @@
+﻿++ 类库文档
+
+++++设计规范
+    * [//谓词]
+    * [//命名]
+
+
++++开发类库
+    这些类库既是[//Lofinil Game SDK]的核心，也是扩展开发的必须类库。
+    * [//Engine]
+    * [//Editor]
+    
++++驱动模式共享库
+    * 基于WinForm的帧率驱动 - [//WinControl]
+
++++应用程序
+    * [//LofiEditor]
+    * [//GamePlayer]
+    * [//NetRefTool]

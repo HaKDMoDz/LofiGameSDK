@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GameName>打砖块2</GameName>
+  <Author>砖家</Author>
+  <TextureResDir>Resource/Texture</TextureResDir>
+  <SongResDir>Resource/Song</SongResDir>
+  <FontResDir>Resource/Font</FontResDir>
+  <TriggerResDir>Resource/Trigger</TriggerResDir>
+  <StageResDir>Resource/Scene</StageResDir>
+  <TextureCntDir>Content/Texture</TextureCntDir>
+  <SongCntDir>Content/Song</SongCntDir>
+  <FontCntDir>Content/Font</FontCntDir>
+  <TriggerCntDir>Content/Trigger</TriggerCntDir>
+  <StageCntDir>Content/Stage</StageCntDir>
+  <CommonResConfig>Config/CommonRes.xml</CommonResConfig>
+  <AssemblyDir>Assembly</AssemblyDir>
+  <ConfigDir>Config</ConfigDir>
+  <Thumbnail>Thumbnail</Thumbnail>
+</Project>

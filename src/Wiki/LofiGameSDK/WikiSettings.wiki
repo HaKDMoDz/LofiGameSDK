@@ -1,0 +1,11 @@
+++ 维基设置
+
+如下是你默认的全局设置。
+
+[global.importance.low.color: grey]
+[global.importance.high.bold: true]
+[global.contact.icon: contact]
+[global.wrap: 50]
+[global.font: Microsoft YaHei]
+
+[icon: cog]

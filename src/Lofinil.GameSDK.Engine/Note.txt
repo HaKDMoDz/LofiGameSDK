@@ -1,0 +1,19 @@
+﻿引用冗余：
+为使用System.Windows.Forms.Design.PropertyTab而引用 System.Windows.Forms.Design.dll
+[因用作数据类的Attribute参数，无法移除]
+为使用System.Drawing.Bitmap和System.Drawing.Design.UITypeEditor而引用
+System.Drawing.dll
+[因用作数据类的Attribute参数，无法移除]
+
+
+支持序列化的类：
+在设计过程中，不希望将数据和运行时类拆分开，因此构造函数通常有两个。
+一个无参构造用于支持反序列化，如果与资源相关，则类中必须有Initialize方法来初始化资源；
+另一个带参构造用于设计时的构造结构模型，构造结构模型目前还没有定，可能选用Prototype模型。
+
+Texture Tile Anim 这些简单层叠类不适合用属性格表示
+
+资源引用对象必须被引用在容器派生类当中，容器是组件，而资源引用不是。
+
+资源类的Draw -- 资源类的Draw按照资源的不同有不同的接口参数，而不是一个无参的函数。
+对资源构成实例引用的组件类负责提供这些参数，这个组件类中也有一个Draw，它没有参数，是供场景系统调用的接口。

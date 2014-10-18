@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{413DB9E9-547A-4904-B3E5-2057B3F3DC65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lofinil.GameSDK.Editor.Module.FormResource</RootNamespace>
+    <AssemblyName>Lofinil.GameSDK.Editor.Module.FormResource</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\Module\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\Program Test\LofiGameSDK\Module\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormProjectItemImageResource.cs" />
+    <Compile Include="FormProjectItemResourceSet.cs" />
+    <Compile Include="FormProjectItemSoundResource.cs" />
+    <Compile Include="FormResourceModule.cs" />
+    <Compile Include="ImagePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImagePicker.Designer.cs">
+      <DependentUpon>ImagePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageScissor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageScissor.Designer.cs">
+      <DependentUpon>ImageScissor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageSetControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageSetControl.Designer.cs">
+      <DependentUpon>ImageSetControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickImageForm.Designer.cs">
+      <DependentUpon>PickImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScissorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScissorControl.Designer.cs">
+      <DependentUpon>ScissorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextureForm.Designer.cs">
+      <DependentUpon>TextureForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lofinil.Architecture\Lofinil.Architecture.csproj">
+      <Project>{19E2AB0E-F534-4FA9-9F6C-38B39ABDDB39}</Project>
+      <Name>Lofinil.Architecture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.FormsLib\Lofinil.FormsLib.csproj">
+      <Project>{E6F6B79A-DB11-4CB3-A967-96F0957874A4}</Project>
+      <Name>Lofinil.FormsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Interception\Lofinil.GameSDK.Editor.Interception.csproj">
+      <Project>{59BBCDAA-765F-4829-9F53-41A8F162EF89}</Project>
+      <Name>Lofinil.GameSDK.Editor.Interception</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.ContentPipelineGUI\Lofinil.GameSDK.Editor.Module.ContentPipeline.csproj">
+      <Project>{B76D6647-7460-4514-8F90-E7A00C9A8338}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.ContentPipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.FormProject\Lofinil.GameSDK.Editor.Module.FormProject.csproj">
+      <Project>{634E337B-412F-42DD-A900-A9C99CED2E27}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.FormProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.FormStage\Lofinil.GameSDK.Editor.Module.FormStage.csproj">
+      <Project>{823A2833-7EE1-41FB-8385-C6F078EEC80E}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.FormStage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.Menu\Lofinil.GameSDK.Editor.Module.Menu.csproj">
+      <Project>{6FFBEB1A-ECC3-4781-B5E6-98E44086BBF0}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.Menu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.Project\Lofinil.GameSDK.Editor.Module.Project.csproj">
+      <Project>{D3E34226-A255-4954-A5D3-BED2370C4535}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.ResourceSet\Lofinil.GameSDK.Editor.Module.ResourceSet.csproj">
+      <Project>{6BB3AC16-F381-436F-8F2E-DE82201CF8FA}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.ResourceSet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Module.Stage\Lofinil.GameSDK.Editor.Module.Stage.csproj">
+      <Project>{4D994C1C-94C0-4BAF-827D-E0902FFE8848}</Project>
+      <Name>Lofinil.GameSDK.Editor.Module.Stage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.Plugin.XNAContentPipeline\Lofinil.GameSDK.Editor.Plugin.XNAContentPipeline.csproj">
+      <Project>{CA228B5E-4172-4828-8A68-6BC06BBA9D1F}</Project>
+      <Name>Lofinil.GameSDK.Editor.Plugin.XNAContentPipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor.SharedRes\Lofinil.GameSDK.Editor.SharedRes.csproj">
+      <Project>{A1AA1526-DA15-47D7-99F5-3D13528669EA}</Project>
+      <Name>Lofinil.GameSDK.Editor.SharedRes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Editor\Lofinil.GameSDK.Editor.Architecture.csproj">
+      <Project>{EB25DD64-E98C-4C49-B47E-312C3A48E731}</Project>
+      <Name>Lofinil.GameSDK.Editor.Architecture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.GameSDK.Engine\Lofinil.GameSDK.Engine.csproj">
+      <Project>{1F0BBD06-A1F5-4B4C-9042-CA77EACD29B5}</Project>
+      <Name>Lofinil.GameSDK.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lofinil.NETUtilityLib\Lofinil.NETUtilityLib.csproj">
+      <Project>{7705A363-5D11-4E57-A951-A571AE1EA431}</Project>
+      <Name>Lofinil.NETUtilityLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagePicker.resx">
+      <DependentUpon>ImagePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageScissor.resx">
+      <DependentUpon>ImageScissor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageSetControl.resx">
+      <DependentUpon>ImageSetControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickImageForm.resx">
+      <DependentUpon>PickImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScissorControl.resx">
+      <DependentUpon>ScissorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextureForm.resx">
+      <DependentUpon>TextureForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

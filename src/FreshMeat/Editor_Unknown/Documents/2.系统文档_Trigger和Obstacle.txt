@@ -1,0 +1,10 @@
+﻿Trigger和Obstacle简介：
+
+1. Trigger的状态改变能够影响到Obstacle
+
+2. Trigger和Obstacle的状态均为int类型，且必须一一对应：
+	（目前只支持开关两种状态）
+	如二状态开关,控制障碍物升降 
+		Trigger   -  int      0(On)    1(Off)
+		Obstacle  -  int      0(Down)  1(Up)
+		

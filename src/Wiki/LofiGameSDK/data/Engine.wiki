@@ -1,0 +1,15 @@
+﻿++ Engine
+
+*类*
+[//FrameAnimator 类]
+[//Accessor 类]
+[//Variable 类]
+[//TriggerPropertyDescriptor 类]
+[//GameManager 类]
+[//TriggerManager 类]
+[//ResourceGroup 类]
+[//ResourceSet 类]
+[//ResourceManager 类]
+
+*枚举*
+[//ExecuteMode 枚举]
